@@ -1,0 +1,166 @@
+/* Paleta de Cores Roxo (igual ao style.css) */
+:root {
+    --purple-dark: #3F2C5F; /* Roxo Escuro quase preto */
+    --purple-medium: #6A3E9F; /* Roxo Médio */
+    --purple-light: #9C6FE6; /* Roxo Claro */
+    --purple-accent: #B08DFF; /* Roxo de Destaque */
+    --text-light: #f4f4f4; /* Texto claro */
+    --text-dark: #333; /* Texto escuro */
+    --input-bg: rgba(255, 255, 255, 0.1); /* Fundo do input translúcido */
+    --border-color: rgba(255, 255, 255, 0.2); /* Cor da borda */
+}
+
+/* Estilos Globais (iguais ao style.css) */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--purple-dark), var(--purple-medium)); /* Gradiente de roxo no fundo */
+    color: var(--text-light);
+    overflow: hidden; /* Para evitar scroll se o conteúdo for menor */
+}
+
+/* Container Principal do Cadastro (similar ao login-container) */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+/* Caixa de Cadastro (similar ao login-box) */
+.register-box {
+    background: rgba(255, 255, 255, 0.08); /* Fundo translúcido */
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 100%;
+    max-width: 450px; /* Um pouco maior para caber mais campos */
+    border: 1px solid var(--border-color);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.register-title {
+    font-size: 2.2em; /* Um pouco menor para caber melhor */
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: var(--text-light);
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.register-subtitle {
+    font-size: 1em;
+    font-weight: 300;
+    margin-bottom: 30px;
+    color: var(--text-light);
+}
+
+/* Formulário (similar ao login-form) */
+.register-form .input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.register-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.95em;
+    font-weight: 600;
+    color: var(--text-light);
+}
+
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 12px 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--input-bg);
+    color: var(--text-light);
+    font-size: 1em;
+    outline: none;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.register-form input[type="text"]::placeholder,
+.register-form input[type="email"]::placeholder,
+.register-form input[type="password"]::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.register-form input[type="text"]:focus,
+.register-form input[type="email"]:focus,
+.register-form input[type="password"]:focus {
+    border-color: var(--purple-accent);
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+
+/* Botão de Cadastro (similar ao login-button) */
+.register-button {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(45deg, var(--purple-accent), var(--purple-light));
+    border: none;
+    border-radius: 8px;
+    color: var(--purple-dark);
+    font-size: 1.1em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 15px; /* Adiciona um espaço acima do botão */
+}
+
+.register-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.3);
+}
+
+.register-button:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Link de Volta para Login (similar aos links da tela de login) */
+.links {
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: var(--text-light);
+}
+
+.links a {
+    color: var(--purple-accent);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.links a:hover {
+    color: var(--text-light);
+    text-decoration: underline;
+}
+
+/* Responsividade Básica (similar ao style.css) */
+@media (max-width: 550px) { /* Aumentei um pouco o max-width para este */
+    .register-box {
+        margin: 20px;
+        padding: 30px 20px;
+    }
+    .register-title {
+        font-size: 1.8em;
+    }
+    .register-subtitle {
+        font-size: 0.9em;
+    }
+}
