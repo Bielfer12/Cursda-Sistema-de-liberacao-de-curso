@@ -1,0 +1,7 @@
+LOGIN - CADASTRO
+
+- Fazer com angular a divisãod e compnents por tela, pois assim não ficara tanto componentes para uma so tela básica.
+
+- Usar localstorage para armazenamento de autenticação e login. 
+
+- Refazer e refatorar tela de login e castro para ficar como a gente quer.
