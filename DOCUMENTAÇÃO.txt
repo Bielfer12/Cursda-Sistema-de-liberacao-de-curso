@@ -2,6 +2,7 @@ LOGIN - CADASTRO
 
 - Fazer com angular a divisãod e compnents por tela, pois assim não ficara tanto componentes para uma so tela básica.
 
-- Usar localstorage para armazenamento de autenticação e login. 
+- LocalStorage: Na parte de login já guardar um login estabelecido por nós, e na parte de cadastro criar um array que recebe todos os dados, e coloca uma marcação(id) no usuario, logo apos fazer o cadastro ele guarda no array do localstorage  volta para tela de login, com o localstorage ja guardado ele consegue entrar tranquilamente com o seu login e senha estabelecidos.  
 
 - Refazer e refatorar tela de login e castro para ficar como a gente quer.
+
