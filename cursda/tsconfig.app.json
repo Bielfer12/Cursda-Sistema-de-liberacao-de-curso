@@ -10,7 +10,7 @@
   },
   "include": [
     "src/**/*.ts"
-  ],
+, "src/app/componentes/login/login.component.js"  ],
   "exclude": [
     "src/**/*.spec.ts"
   ]
